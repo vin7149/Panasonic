@@ -35,8 +35,8 @@ public class GlobalClass {
 	}
 	
 	public static String getUrl() throws IOException {
-	
-		FileInputStream fp=new FileInputStream("C:\\Users\\vinod.rohilla\\eclipse-workspace\\panasonic\\Config\\OR.Properties");
+		
+		FileInputStream fp=new FileInputStream(Directory+"\\Config\\OR.Properties");
 		prop.load(fp);
 		URL=prop.getProperty("URL");
 		System.out.println("Current URL is >>>>"+URL);
